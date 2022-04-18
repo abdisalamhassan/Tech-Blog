@@ -1,56 +1,46 @@
 const sequelize = require('../config/connection');
-const { User, Post } = require('../models');
+const { User } = require('../models');
 
 const userdata = [
   {
-    username: 'alesmonde0',
-    email: 'nwestnedge0@cbc.ca',
-    password: 'password123'
+    username: 'Monica',
+    password: 'monica123'
   },
   {
-    username: 'jwilloughway1',
-    email: 'rmebes1@sogou.com',
-    password: 'password123'
+    username: 'Willoughway1',
+    password: 'william456'
   },
   {
-    username: 'iboddam2',
-    email: 'cstoneman2@last.fm',
-    password: 'password123'
+    username: 'Ibrahim',
+    password: 'ibrahimtwo'
   },
   {
-    username: 'dstanmer3',
-    email: 'ihellier3@goo.ne.jp',
-    password: 'password123'
+    username: 'Stacy',
+    password: 'stacysdad'
   },
   {
-    username: 'djiri4',
-    email: 'gmidgley4@weather.com',
-    password: 'password123'
+    username: 'DJ',
+    password: 'djdrama'
   },
   {
-    username: 'msprague5',
-    email: 'larnout5@imdb.com',
-    password: 'password123'
+    username: 'Prague',
+    password: 'wrknpragress'
   },
   {
-    username: 'mpergens6',
-    email: 'hnapleton6@feedburner.com',
-    password: 'password123'
+    username: 'Pergens',
+    password: 'purgatory'
   },
   {
-    username: 'tpenniell7',
-    email: 'kperigo7@china.com.cn',
-    password: 'password123'
+    username: 'Penniell',
+    password: 'thornloki'
   },
   {
-    username: 'msabbins8',
-    email: 'lmongain8@google.ru',
-    password: 'password123'
+    username: 'Sabbins',
+    password: 'nicsabbin',
   },
   {
-    username: 'jmacarthur9',
-    email: 'bsteen9@epa.gov',
-    password: 'password123'
+    username: 'Macarthur',
+    password: 'macbeth56'
   }
 ];
 
