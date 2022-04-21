@@ -10,15 +10,21 @@ body, html {
   color: #333;
 }
 
-a {
-  text-decoration: none;
-  color: #225ca3;
-  font-weight: bold;
-  transition: color .1s;
+main,
+.site-name{
+  background-color: #b8cba2;
 }
 
-a:hover {
-  color: #3486eb;
+a,
+.btn-no-style,
+#comment-subtitle {
+  color: #b8cba2;
+  
+}
+
+a:hover,
+.btn-no-style:hover {
+  color: #e2edd5;
 }
 
 button {
@@ -39,6 +45,7 @@ button:hover {
 .post-list {
   margin: 0;
   padding: 0;
+  list-style-type:none;
 }
 
 textarea, input {
@@ -75,7 +82,6 @@ form label {
 }
 
 header {
-  border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +112,7 @@ main {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  
 }
 
 .delete-post-btn {
@@ -120,6 +126,7 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  border: 3px solid black;
 }
 
 .post .title span {
@@ -131,16 +138,10 @@ main {
 .edit-link {
   display: block;
   margin: -1.5% 0 2% 0;
+  color:#2c2307;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color .1s;
-}
 
-.upvote-btn:hover {
-  background-color: #1f9c13;
-}
 
 .comment-form {
   margin-bottom: 5%;

@@ -1,9 +1,10 @@
 const signupFormHandler = async function(event){
     event.preventDefault();
 
-    const username = document.querySelector('#username-signup').ariaValueMax.trim();
-    const password = document.querySelector('#password-signup').ariaValueMax.trim();
-
+    const username = document.querySelector('#username-input-signup').value.trim();
+    const password = document.querySelector('#password-input-signup').value.trim();
+    console.log(username);
+    console.log(password);
     if (username && password){
         const response = await fetch ('/api/users',{
             method: 'post',
@@ -24,4 +25,4 @@ const signupFormHandler = async function(event){
     }
 }
 
-document.querySelector('#signup-form'). addEventListener('submit', signupFormHandler);
+document.querySelector('.signup-form'). addEventListener('submit', signupFormHandler);

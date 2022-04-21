@@ -21,11 +21,7 @@ router.get('/', withAuth, async(req,res) => {
                  model: User,
                  attributes: ['username']
              },
-             {
-                 model: User,
-                 attributes: [ 'username']
-             }
-            ]
+            
          }]
 
     }).then(dbPostData => {
@@ -42,7 +38,7 @@ router.get('/', withAuth, async(req,res) => {
         res.status(500).json(err);
     });
 
-};
+});
 
 router.get('/edit/:id', withAuth, (req,res) => {
     Post.findOne({
