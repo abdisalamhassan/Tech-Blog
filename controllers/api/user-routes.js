@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     });
 });
 
-
+// Get By ID
 router.get('/:id', (req, res) => {
   User.findOne({
     attributes: { exclude: ['password'] },
@@ -49,6 +49,7 @@ router.get('/:id', (req, res) => {
     });
 });
 
+// Add a new User
 router.post('/', (req, res) => {
   
   User.create({
@@ -71,6 +72,7 @@ router.post('/', (req, res) => {
     });
 });
 
+// Route for users to login
 router.post('/login', (req, res) => {
   
   User.findOne({
@@ -105,9 +107,10 @@ router.post('/login', (req, res) => {
   });
 });
 
-router.put('/:id', (req, res) => {
-  
 
+
+// Update an existing user
+router.put('/:id', (req, res) => {
   
   User.update(req.body, {
     individualHooks: true,
@@ -128,6 +131,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+// Deletes existing user
 router.delete('/:id', (req, res) => {
   User.destroy({
     where: {
